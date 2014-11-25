@@ -1,6 +1,7 @@
 default: &default 
   adapter: postgresql 
   encoding: unicode 
+  database: propeller_db
   pool: 5
   username: kogo
   password:
