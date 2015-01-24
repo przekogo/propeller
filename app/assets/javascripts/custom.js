@@ -13,13 +13,13 @@ function totop(thisthing){
         marker=true;
       }
       else if(marker==true){
-        console.log('.'+depth[i]);
         $('.'+depth[i]).addClass(depth[i-1]);
+        $('.'+depth[i]).removeClass('oneanim');
         $('.'+depth[i]).removeClass(depth[i]);
       }
     }
     thisthing.parent().removeClass('two three four five');
-    thisthing.parent().addClass('one');
+    thisthing.parent().addClass('one oneanim');
     thisthing.parent().css('left', '');
   };
 };

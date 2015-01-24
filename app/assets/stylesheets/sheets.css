@@ -1,5 +1,5 @@
 body{
-  background: url(wood.jpg) no-repeat 50% 0;
+  background: url(darkwoodrepeating.jpg) repeat 50% 0;
 }
 .element{
   padding: 10px;
@@ -13,7 +13,6 @@ body{
   margin: 5px;
   border: 5px #000000;
   border-radius: 100%;
-
 }
 
 .element:hover{
@@ -36,7 +35,7 @@ body{
   -webkit-border-radius: 10px;
   border-radius:         10px;
   text-align: justify;
-  transition: all 0.2s;
+  transition: all 0.3s;
   box-shadow: 0 0 5px 3px rgba(0,0,0,1);
   z-index: 1;
 }
@@ -66,9 +65,16 @@ body{
   height: 100%;
   background: inherit;
 }
-.top{
-  left: auto;
-  z-index: 5;
+@-webkit-keyframes swap {
+  50% {left: -90%;}
+  100% {left: 10%;}
+}
+@keyframes swap {
+  50% {left: -90%;}
+  100% {left: 10%;}
+}
+.oneanim{
+  -webkit-animation: swap 0.5s forwards;
 }
 .one{
   position: absolute;
@@ -77,7 +83,7 @@ body{
   z-index: 5;
 }
 .first{
-  background: #00bbaa;
+  background: #790000;
 }
 .first .sheetbutton{
   position: absolute;
@@ -92,13 +98,13 @@ body{
   z-index: 4;
 }
 .second{
-  background: #07af00;
+  background: #000000;
 }
 .second .sheetbutton{
   position: absolute;
   top: 105px;
   left:-125px;
-  background: #07af00;
+  background: inherit;
 }
 .three{
   position: absolute;

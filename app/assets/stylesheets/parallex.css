@@ -1,0 +1,44 @@
+#slide1, #slide2{ width: 100%; }
+#slide1{
+    background:url('wood.jpg') 50% 0 no-repeat fixed;
+    color: #fff;
+    height: 600px;
+    margin: 0;
+    padding: 200px 0 260px 0;
+    background-size: cover;
+}
+ 
+#slide2{
+    background-color: #fff;
+    color: #333333;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 200px 0;
+}
+ 
+#slide3{
+    background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+    color: #fff;
+    height: 600px;
+    padding: 170px 0 0 0;
+    background-size: cover;
+}
+ 
+#slide4{
+    background-color: #fff;
+    color: #333333;
+    height: 300px;
+    padding: 200px 0;
+}
+ 
+#slide5{
+    background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+    height: 200px;
+    margin: 0 auto;
+    padding: 250px 0;
+    color: #fff;
+    background-size: cover;
+}
+#copyright  { color: #fff; font-family:"Wellfleet";  font-size: 14px; margin-top: 100px; text-align: center;  }
+#copyright  a { text-decoration: none; color: #fff;  }

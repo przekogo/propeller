@@ -1,38 +1,41 @@
-.book
-  .one.first.sheet
-    .sheetbutton
-      ONE
-    .sheetcontent
-      .element
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque massa justo, mollis lobortis massa vitae, maximus pulvinar magna. In aliquet purus eget efficitur suscipit. Donec sollicitudin nunc et orci pellentesque, eget commodo ex interdum. Nunc vel magna tincidunt, sagittis nibh ac, dapibus metus. Donec aliquam diam ornare hendrerit mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris ac felis eu mi maximus pharetra luctus ac ante. Ut eu condimentum nisl, sit amet luctus quam. Aenean sed ligula in nisi vehicula tristique. Aliquam eget metus quam.
-  .two.second.sheet
-    .sheetbutton
-      TWO
-    .sheetcontent
-      .element
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque massa justo, mollis lobortis massa vitae, maximus pulvinar magna. In aliquet purus eget efficitur suscipit. Donec sollicitudin nunc et orci pellentesque, eget commodo ex interdum. Nunc vel magna tincidunt, sagittis nibh ac, dapibus metus. Donec aliquam diam ornare hendrerit mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris ac felis eu mi maximus pharetra luctus ac ante. Ut eu condimentum nisl, sit amet luctus quam. Aenean sed ligula in nisi vehicula tristique. Aliquam eget metus quam.
-  .three.third.sheet
-    .sheetbutton
-      three
-    .sheetcontent
-  .four.fourth.sheet
-    .sheetbutton
-      four
-    .sheetcontent
-  .five.fifth.sheet
-    .sheetbutton
-      five
-    .sheetcontent
-
+#slide1
+  %div
+    #christmas_tree
+    #snowflakes1
+    #snowflakes2
+    %h2 MERRY
+    %h1 CHRISTMAS
+    #divider
+    %h3 HAPPY NEW YEAR
+    #ribbon
+    #new_year
+#slide2
+  %div
+    %div
+      %h3 “Then the Grinch thought of something he hadn't before! What if Christmas, he thought, doesn't come from a store. What if Christmas...perhaps...means a little bit more!”
+      %img{:align => "left", :src => "img/dr-seuss.png"}/
+      %h4 Dr. Seuss
+#slide3
+  %div
+    %div
+      %h3 “I truly believe that if we keep telling the Christmas story, singing the Christmas songs, and living the Christmas spirit, we can bring joy and happiness and peace to this world.”
+      %img{:align => "left", :src => "img/norman.png"}/
+      %h4 Norman Vincent Peale
+#slide4
+  %div
+    %div
+      %h3 “Christmas doesn't come from a store, maybe Christmas perhaps means a little bit more....”
+      %img{:align => "left", :src => "img/dr-seuss.png"}/
+      %h4 Dr. Seuss
+#slide5
+  %div
+    %div
+      %h3 “My idea of Christmas, whether old-fashioned or modern, is very simple: loving others. Come to think of it, why do we have to wait for Christmas to do that?”
+      %img{:align => "left", :src => "img/bob.png"}/
+      %h4 Bob Hope
+    #copyright
+      %a{:href => "http://www.1stwebdesigner.com/"} Copyright 1stwebdesigner.com
 :javascript
-  $(document).ready(function(){
-    $(".sheetbutton").click(function(){
-      totop($(this));
-    });
-    var lefty
-    $(".sheetbutton").hover(function(){
-      pushOut($(this));
-    },function(){
-      pushIn($(this));  
-    });
-  });
+  console.log($(window).height());
+  console.log($(window).scrollTop());
+  console.log($('#slide2').offset().top);
