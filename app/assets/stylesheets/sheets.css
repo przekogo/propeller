@@ -50,7 +50,7 @@ body{
   height: 40px;
   width: 125px;
   transform: rotate(-90deg);
-  transform-origin: right 35 0;
+  transform-origin: right 35px 0;
   box-shadow: -2px 2px 5px 1px rgba(0,0,0,1);
   z-index: 1;
 }
