@@ -23,15 +23,3 @@
     .sheetbutton
       five
     .sheetcontent
-
-:javascript
-  $(document).ready(function(){
-    $(".sheetbutton").click(function(){
-      totop($(this));
-    });
-    $(".sheetbutton").hover(function(){
-      pushOut($(this));
-    },function(){
-      pushIn($(this));  
-    });
-  });

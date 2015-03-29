@@ -1,0 +1,14 @@
+#loginsheet
+  .loginbutton
+    -if user_signed_in?
+      %span#changer
+        =current_user.email.slice(0..(current_user.email.index('@')-1))
+      =link_to destroy_user_session_path, method: :delete do
+        <span></span>
+    -else
+      login
+  .logincontent
+    .lefthalf
+      =render "partials/login"
+    .righthalf
+      =render "partials/register"

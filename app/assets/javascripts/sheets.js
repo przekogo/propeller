@@ -1,3 +1,14 @@
+$(document).ready(function(){
+  $(".sheetbutton").click(function(){
+    totop($(this));
+  });
+  $(".sheetbutton").hover(function(){
+    pushOut($(this));
+  },function(){
+    pushIn($(this));  
+  });
+});
+//declarations
 function hide(id) {
   document.getElementById(id).style.display = 'none';
 }

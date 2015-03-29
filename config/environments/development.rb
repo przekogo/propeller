@@ -31,4 +31,5 @@ Propeller::Application.configure do
   # Paperclip::Attachment.default_options[:fog_credentials]={provider: "Local", :local_root => "#{Rails.root}/public"}
   # Paperclip::Attachment.default_options[:fog_directory]=''
   # Paperclip::Attachment.default_options[:fog_host]='http://localhost:3000'
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
 end

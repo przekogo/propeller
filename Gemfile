@@ -29,3 +29,4 @@ gem 'spring',        group: :development
 
 gem 'thin'
 gem 'haml'
+gem 'devise'
