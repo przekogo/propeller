@@ -2,7 +2,7 @@
   padding:0;
   width: 80%;
   height: 220px;
-  position: absolute;
+  position: fixed;
   left: 10%;
   top: -210px;
   -moz-border-radius:    0 0 10px 10px;
@@ -19,7 +19,7 @@
   -moz-border-radius:    0 0 10px 10px;
   -webkit-border-radius: 0 0 10px 10px;
   border-radius:         0 0 10px 10px;
-    box-shadow:
+  box-shadow:
     -4px 5px 3px -2px #000000,
     inset  5px 0   0px #660099,
     inset  -5px  0 0px #660099,

@@ -1,0 +1,11 @@
+-if !flash.empty?
+  -if notice
+    .popup.pup-notice
+      -flash.each do |name, msg|
+        =content_tag :div, msg, class: name
+      %button.btn.btn-notice OK
+  -else
+    .popup.pup-alert
+      -flash.each do |name, msg|
+        =content_tag :div, msg, class: name
+      %button.btn.btn-alert OK

@@ -7,7 +7,7 @@ $(document).ready(function(){
   },function(){
     pushInDown($(this));  
   });
-  $(document).on('click', function(e) {
+  $(document).on('click', function(e){
     if (parseInt($('#loginsheet').css("top"))>parseInt("-200px") && (! $(e.target).closest('#loginsheet').length || $(e.target).closest('.loginbutton').length)) {
       // you clicked anywhere but on an element inside #linkitem (or itself)
       $('#loginsheet').css('top', '-210px');
