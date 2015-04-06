@@ -4,7 +4,7 @@ class ThingsController < ApplicationController
     if user.nil?
       @things = Thing.search(params[:search])
     else
-      @things = Thing.search(params[:search]) + user.things
+      @things = (Thing.search(params[:search]) + user.things).uniq
     end
     if user_signed_in?
       @mythings = current_user.things
