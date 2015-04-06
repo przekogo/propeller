@@ -1,0 +1,21 @@
+-@things.each do |e|
+  %form{action: "/things/update", method: "post", "data-remote" => "true"}
+    .form-group.indentleft
+      =hidden_field_tag "authenticity_token", form_authenticity_token
+      =hidden_field_tag  "id", e.id
+      -if user_signed_in?
+        =hidden_field_tag  "user_id", current_user.id
+      .input-group
+        %input.form-control{name: "content", value: e.content}
+        %span.input-group-btn
+          =link_to 'delete', {controller: "things", action: "destroy", id: e.id}, method: "delete", data: {confirm: "Are you sure?"}, remote: true, class: "btn btn-delete"
+          %button.btn.btn-change{type: "submit"} change
+%form{action: "/things/create", method: "post", "data-remote" => "true"}
+  .form-group.indentleft
+    =hidden_field_tag "authenticity_token", form_authenticity_token
+    -if user_signed_in?
+      =hidden_field_tag  "user_id", current_user.id
+    .input-group
+      %input.form-control{name: "content", placeholder: "describe the thing..."}
+      %span.input-group-btn
+        %button.btn.btn-add{type: "submit"} add

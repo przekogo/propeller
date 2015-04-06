@@ -1,0 +1,8 @@
+%h3 All the Things
+= form_tag things_path, method: 'get', id: "things_search" do
+  .form-group.has-feedback.search-bar
+    %label.control-label Search
+    = text_field_tag :search, params[:search], {autocomplete: "off", type: "input", placeholder: "start typing to search...", class: "form-control", title: "search by things or authors"}
+    %i.fa.fa-search.form-control-feedback
+#things
+  =render "things/list"

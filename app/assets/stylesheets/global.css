@@ -121,11 +121,14 @@
   -moz-animation: fadeout 0.5s forwards;
 }
 @-webkit-keyframes fadeout {
+  0% {display: block;}
   100% {top: 85%; opacity: 0; display: none;}
 }
 @-moz-keyframes fadeout {
+  0% {display: block;}
   100% {top: 85%; opacity: 0; display: none;}
 }
 @keyframes fadeout {
+  0% {display: block;}
   100% {top: 85%; opacity: 0; display: none;}
 }

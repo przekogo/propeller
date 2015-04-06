@@ -15,6 +15,14 @@
   z-index: 6;
   background: #f0f0ff;
 }
+#loginsheet .form-control:focus{
+  border-color: #660099;
+  box-shadow: 
+    inset  0 -1px 2px #660099,
+    inset  0  1px 2px #660099,
+    inset  -1px 0 2px #660099,
+    inset  1px 0  2px #660099;
+}
 .loginbutton{
   -moz-border-radius:    0 0 10px 10px;
   -webkit-border-radius: 0 0 10px 10px;

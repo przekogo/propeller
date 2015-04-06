@@ -1,9 +1,11 @@
 %html
   %head
+    %link{href: "http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel: "stylesheet", type: "text/css"}/
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    =render "partials/flashes"
+    #flash
+      =render "partials/flashes"
     =render "partials/loginpage"
     =yield

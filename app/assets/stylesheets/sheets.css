@@ -92,9 +92,12 @@ body{
   left: 10%;
   z-index: 5;
 }
-.first{
-  /*background: #790000;*/
-  /*background: url(_original.jpg) repeat 50% 0;*/
+.first .form-control:focus{
+  border-color: #123456;
+  box-shadow: 
+    inset  0 -1px 2px #123456,
+    inset  0  1px 2px #123456,
+    inset  1px 0  2px #123456;
 }
 .first .sheetbutton{
   position: absolute;
@@ -118,8 +121,12 @@ body{
   left: 9.5%;
   z-index: 4;
 }
-.second{
-  /*background: #000000;*/
+.second .form-control:focus{
+  border-color: #edc321;
+  box-shadow: 
+    inset  0 -1px 2px #edc321,
+    inset  0  1px 2px #edc321,
+    inset  1px 0  2px #edc321;
 }
 .second .sheetbutton{
   position: absolute;
@@ -142,8 +149,12 @@ body{
   left: 9%;
   z-index: 3;
 }
-.third{
-  /*background: #012345;*/
+.third .form-control:focus{
+  border-color: #990000;
+  box-shadow: 
+    inset  0 -1px 2px #990000,
+    inset  0  1px 2px #990000,
+    inset  1px 0  2px #990000;
 }
 .third .sheetbutton{
   position: absolute;
@@ -166,8 +177,12 @@ body{
   left: 8.5%;
   z-index: 2;
 }
-.fourth{
-  /*background: #543210;*/
+.fourth .form-control:focus{
+  border-color: #333333;
+  box-shadow: 
+    inset  0 -1px 2px #333333,
+    inset  0  1px 2px #333333,
+    inset  1px 0  2px #333333;
 }
 .fourth .sheetbutton{
   position: absolute;
@@ -190,8 +205,12 @@ body{
   left: 8%;
   z-index: 1;
 }
-.fifth{
-  /*background: #fedcba;*/
+.fifth .form-control:focus{
+  border-color: #007711;
+  box-shadow: 
+    inset  0 -1px 2px #007711,
+    inset  0  1px 2px #007711,
+    inset  1px 0  2px #007711;
 }
 .fifth .sheetbutton{
   position: absolute;

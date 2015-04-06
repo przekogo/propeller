@@ -1,16 +1,8 @@
 class SheetsController < ApplicationController
   def index
-  end
-  # devise login compatibility
-  def resource_name
-    :user
-  end
-
-  def resource
-    @resource ||= User.new
-  end
-
-  def devise_mapping
-    @devise_mapping ||= Devise.mappings[:user]
+    @things = Thing.all
+    if user_signed_in?
+      @mythings = current_user.things
+    end
   end
 end
